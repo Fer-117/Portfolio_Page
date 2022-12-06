@@ -1,0 +1,107 @@
+body{
+    background-color: lightgray;
+}
+
+/********** Head ************/
+
+
+nav {
+    display: flex;
+    color: red;
+    background-color: gray;
+}
+
+h1 {
+    margin-right: auto;
+    background-color: lightblue;
+    color: gray;
+}
+
+nav ul{
+    margin-left: auto;
+}
+
+li {
+    float: right;
+    list-style-type: none;
+  }
+  
+li a {
+    display: inline-block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #111111;
+}
+
+.subtitle{
+    display: flex;
+    background-image: url();
+}
+
+.subtitle h2{
+    justify-content: flex-end;
+}
+
+/********** Body ************/
+section {
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    padding: auto;
+    
+}
+
+section h2{
+    display: flex;
+    margin: auto;
+    padding: auto;
+    width: 30%;
+    justify-content: flex-end;
+    font-size: 250%;
+}
+section p, section ul {
+    margin: auto;
+    padding: 50px;
+    width: 70%;
+    border-left: 2px solid lightblue;
+}
+
+section ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.mainImage {
+    justify-content: center;
+    width: 100%;
+}
+
+/* img {
+    border: 2px solid lightblue;
+} */
+
+section ul li{
+    width: 45%;
+    height: 150px;
+    border: 2px solid lightblue;
+}
+
+/********** Footer ************/
+
+
+.contactInfo li {
+    justify-content: center;
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+}
