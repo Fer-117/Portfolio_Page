@@ -7,72 +7,92 @@
     <link rel="stylesheet" href="/Assets/styles.css">
     <title>Portfolio</title>
 </head>
-
+ 
 <body>
-    <head>
-        <nav>
-            <h1>Fernando Sanchez Gutierrez</h1>
-            <ul>
-                <li><a href="">About Me</a></li>
-                <li><a href="">Work</a></li>
-                <li><a href="">Contact Me</a></li>
-                <li><a href="">Resume</a></li>
-            </ul>
+    <header>
+        <nav class="navBar">
+            <div class="name">
+                <h1>Fernando Sanchez Gutierrez</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#aboutMe">About Me</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contactMe">Contact Me</a></li>
+                    <li><a href="">Resume</a></li>
+                </ul>
+            </div>
         </nav>
         <section class="subtitle">
-            <h2>Cool subtitle here</h2>
+            <h2>Welcome to my Portfolio page.</h2>
         </section>
-    </head>
+    </header>
 
     <main>
-        
-        <section class="aboutMe">
+        <section class="sectionContainer">
+            <div class="sectionTitle">
+                <h2 id="aboutMe">About Me</h2>
+            </div>
             
-            <h2>About Me</h2>
-        
-            <p>I am currently enrolled in a fullstack web development bootcamp in hopes of aquiring sufficient
-                knowledge and practice to develop robust web pages and apps. This is the second bootcamp I take, the first 
-                was far simpler than the current bootcamp. After realizing there where gaps in my knowledge of web development
-                I decided to enroll in this more complete bootcamp. Not only to complement my knowledge, but also to have 
-                more accountability since it's been hard being disciplined on my own. I don't intend to keep taking bootcamps
-                but I felt like this particular bootcamp would help me develop better habits in order to succeed on my own 
-                after completing the bootcamp. 
-            </p>
+            <div class="sectionContent">
+                <p>
+                    I am currently enrolled in a fullstack web development bootcamp in hopes of aquiring sufficient
+                    knowledge and practice to develop robust web pages and apps. This is the second bootcamp I take, the first 
+                    was far simpler than the current bootcamp. After realizing there where gaps in my knowledge of web development
+                    I decided to enroll in this more complete bootcamp. Not only to complement my knowledge, but also to have 
+                    more accountability since it's been hard being disciplined on my own. I don't intend to keep taking bootcamps
+                    but I felt like this particular bootcamp would help me develop better habits in order to succeed on my own 
+                    after completing the bootcamp. 
+                </p>
+            </div>   
         </section>
-
-        <section class="Work">
         
-            <h2>Work</h2> 
+        <section class="sectionContainer">
+            <div class="sectionTitle">
+                <h2>Work</h2> 
+            </div>
             
-            <ul>
-                <li class="mainImage">
-                    <img src="" alt="">
-                </li>
-                <li>
-                    <img src="" alt="">
-                </li>
-                <li>
-                    <img src="" alt="">
-                </li>
-                <li>
-                    <img src="" alt="">
-                </li>
-                <li>
-                    <img src="" alt="">
-                </li>
-            </ul>
+            <div id="work" class="sectionContent">
+                <div class="mainImageCont">
+                    <p class="label">Project 1</p>
+                    <img src="/Assets/img/img_5terre.jpg" alt="">
+                </div>
+                <div class="projects">
+                    <div>
+                        
+                        <img src="/Assets/img/lights600x400.jpg" alt="">
+                        <p class="label">Project 2</p>
+                        
+                    </div>
+                    <div>
+                        <p class="label">Project 3</p>
+                        <img src="/Assets/img/lights600x400.jpg" alt="">
+                    </div>
+                    <div>
+                        <p class="label">Project 4</p>
+                        <img src="/Assets/img/lights600x400.jpg" alt="">
+                    </div>
+                    <div>
+                        <p class="label">Project 5</p>
+                        <img src="/Assets/img/lights600x400.jpg" alt="">
+                    </div>
+                </div>
+                
+            </div>
         </section>
     </main>
 
-    <footer>
-        <section>
-            <h2>Contact Me</h2>
-            <ul class="contactInfo">
-                <li>3326770116</li>
+    <footer class="sectionContainer">
+        <div class="sectionTitle">
+            <h2 id="contactMe">Contact Me</h2>
+        </div>
+        <div class="sectionContent">
+            <ul class="menu contactMenu">
+                <li>+52 3326770116</li>
                 <li>fsg11497@gmail.com</li>
                 <li>github account</li>
             </ul>
-        </section> 
+        </div>
     </footer>
 </body>
 </html>

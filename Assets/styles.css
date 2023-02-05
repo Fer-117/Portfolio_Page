@@ -1,107 +1,166 @@
+:root {
+    --darkGray: rgb(107, 101, 101);
+    --lightBlue: rgb(148, 210, 231);
+}
+
 body{
+    margin: auto;
+    padding: auto;
     background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif
 }
-
-/********** Head ************/
-
-
-nav {
+ 
+                    /********** Header ************/
+header{
+    margin: auto;
+    padding: auto;
+}
+.navBar {
     display: flex;
-    color: red;
-    background-color: gray;
+    background-color: var(--darkGray);
+    font-weight: bold;
+    margin: auto;
+    padding: auto;
 }
-
-h1 {
-    margin-right: auto;
-    background-color: lightblue;
-    color: gray;
+.name {
+    background-color: var(--lightBlue);
+    color: var(--darkGray);
+    align-self: flex-start;
+    font-size: 120%;
+    margin: 10px 0;
+    padding: 0 10px;
 }
-
-nav ul{
-    margin-left: auto;
+.menu{
+    display: flex;
+    flex: auto;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+    /* margin: auto 10px auto auto; */
 }
-
+.menu ul {
+    display: flex;
+    align-items: flex-end;
+}
 li {
-    float: right;
+    flex-grow: 1;
     list-style-type: none;
+    border-bottom: 3px solid var(--lightBlue);
+    margin: 0 10px;
+    padding: 10px;
+    padding-bottom: 5px;
   }
-  
 li a {
-    display: inline-block;
     text-align: center;
-    padding: 16px;
     text-decoration: none;
+    color: var(--lightBlue);
 }
-  
-li a:hover {
-    background-color: #111111;
+li:hover {
+    background-color: rgb(160, 151, 151);
 }
 
+                    /* subtitle */
 .subtitle{
     display: flex;
-    background-image: url();
+    background-image: linear-gradient(to right, rgb(126, 139, 163) , rgb(98, 146, 209));
+    height: 100px;
+    margin: auto;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .subtitle h2{
-    justify-content: flex-end;
+    background-color: var(--darkGray);
+    color: var(--lightBlue);
+    font-size: 150%;
+    margin: 10px;
+    padding: 10px;
 }
 
-/********** Body ************/
-section {
+                    /********** Main ************/
+main{
+    display: block;
+}
+                    /*section Containers*/
+.sectionContainer{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
+    margin: 10px;
+    padding: 10px;
+    max-width: 100%;
+}
+.sectionTitle{
+    align-self: flex-start;
+    flex: 1;
+    align-self: center;
+}
+.sectionTitle h2{
+    text-align: right;
+    margin: 10px;
+    padding: 10px;
+}
+.sectionContent{
+    display: flex;
+    flex: auto;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    flex: 3;
+    align-self: flex-end;
+    margin: 10px;
+    padding-left: 20px;
+    border-left: 3px solid var(--lightBlue);
+}
+                    /*  body images */
+.mainImageCont{
+    display: flex;
+    flex: auto;
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.mainImageCont img{
+    max-width: 100%;
+    height: auto;
     margin: auto;
     padding: auto;
-    
+    border: 3px solid var(--lightBlue);
 }
-
-section h2{
+.projects{
     display: flex;
-    margin: auto;
-    padding: auto;
-    width: 30%;
-    justify-content: flex-end;
-    font-size: 250%;
-}
-section p, section ul {
-    margin: auto;
-    padding: 50px;
-    width: 70%;
-    border-left: 2px solid lightblue;
-}
-
-section ul {
-    display: flex;
-    justify-content: space-between;
+    flex: auto;
     flex-wrap: wrap;
-    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+    margin: 10px;
+    padding: 10px;
 }
-
-.mainImage {
-    justify-content: center;
-    width: 100%;
+.projects div{
+    display: flex;
+    max-width: 40%;
+    height: auto;
+    margin: 10px;
+    padding: auto;
 }
-
-/* img {
-    border: 2px solid lightblue;
-} */
-
-section ul li{
-    width: 45%;
-    height: 150px;
-    border: 2px solid lightblue;
+.projects div img{
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    padding: auto;
+    border: 3px solid var(--lightBlue);
 }
-
-/********** Footer ************/
-
-
-.contactInfo li {
-    justify-content: center;
-    list-style-type: none;
-    display: inline-block;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-    width: 150px;
-    height: 50px;
+.label{
+    align-self: flex-end;
+    justify-self: flex-start;
+    position: absolute;
+    background-color: var(--darkGray);
+    color: var(--lightBlue);
+    font-weight: bold;
+    border: 3px solid var(--lightBlue);
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 5px;
 }
+                    /********** Footer ************/
