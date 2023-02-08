@@ -116,7 +116,7 @@ main{
 .mainImageCont{
     display: flex;
     flex: auto;
-    max-width: 100%;
+    max-width: 80%;
     margin: 0px;
     padding: 0px;
 }
