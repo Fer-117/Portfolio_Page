@@ -4,98 +4,181 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./CSS/styles.css" />
+    <!-- <link rel="stylesheet" href="./CSS/styles.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <title>Portfolio</title>
   </head>
 
   <body>
-    <header>
-      <nav class="navBar">
-        <div class="name">
-          <h1>Fernando Sanchez Gutierrez</h1>
+    <header class="container md:mx-auto">
+      <nav class="navBar w-full flex header bg-gray-600">
+        <div
+          class="container flex justify-start items-center text-gray-600 m-2 font-bold"
+        >
+          <h1
+            class="text-3xl bg-blue-300 p-2 border-2 border-blue-300 rounded-xl"
+          >
+            Fernando Sanchez Gutierrez
+          </h1>
         </div>
-        <div class="menu">
-          <ul>
-            <li><a href="#aboutMe">About Me</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contactMe">Contact Me</a></li>
-            <li><a href="">Resume</a></li>
+        <div
+          class="menu flex container p-2 content-end justify-end items-center"
+        >
+          <ul class="flex justify-end content-end text-blue-300 font-bold">
+            <li class="p-2 m-2 border-b-4 border-b-blue-300">
+              <a href="#aboutMe">About Me</a>
+            </li>
+            <li class="p-2 m-2 border-b-4 border-b-blue-300">
+              <a href="#work">Work</a>
+            </li>
+            <li class="p-2 m-2 border-b-4 border-b-blue-300">
+              <a href="#contactMe">Contact Me</a>
+            </li>
+            <li class="p-2 m-2 border-b-4 border-b-blue-300">
+              <a href="">Resume</a>
+            </li>
           </ul>
         </div>
       </nav>
-      <section class="subtitle">
-        <h2>Welcome to my Portfolio page.</h2>
+      <section class="subtitle container w-full flex justify-end bg-blue-300">
+        <h2
+          class="text-2xl bg-blue-300 p-2 border-2 border-blue-300 rounded-xl text-gray-600 m-2 font-bold"
+        >
+          Welcome to my Portfolio page.
+        </h2>
       </section>
     </header>
 
-    <main>
-      <section class="sectionContainer">
-        <div class="sectionTitle">
-          <h2 id="aboutMe">About Me</h2>
-        </div>
-
-        <div class="sectionContent">
-          <p>
-            I am currently enrolled in a fullstack web development bootcamp in
-            hopes of aquiring sufficient knowledge and practice to develop
-            robust web pages and apps. This is the second bootcamp I take, the
-            first was far simpler than the current bootcamp. After realizing
-            there where gaps in my knowledge of web development I decided to
-            enroll in this more complete bootcamp. Not only to complement my
-            knowledge, but also to have more accountability since it's been hard
-            being disciplined on my own. I don't intend to keep taking bootcamps
-            but I felt like this particular bootcamp would help me develop
-            better habits in order to succeed on my own after completing the
-            bootcamp.
-          </p>
-        </div>
-      </section>
-
-      <section class="sectionContainer">
-        <div class="sectionTitle">
-          <h2>Work</h2>
-        </div>
-
-        <div id="work" class="sectionContent">
-          <div class="mainImageCont">
-            <p class="label">
-              <a
-                target="_blank"
-                href="https://fer-117.github.io/Fer-117_PasswordGenerator/"
-              >
-                Password Generator</a
-              >
-            </p>
-            <img src="Assets/img/passwordGenerator.png" alt="" />
+    <main class="m-2">
+      <section class="sectionContainer md:container md:mx-auto bg-gray-100">
+        <div
+          class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-9 lg:grid-cols-12 gap-2"
+        >
+          <div
+            class="sectionTitle container m-2 p-4 flex items-center justify-end bg-gray-100 border-r-4 border-blue-300 col-span-1 sm:col-span-1 md:col-span-2 lg:col-span-3"
+          >
+            <h2 id="aboutMe " class="text-3xl text-blue-300 font-bold">
+              About Me
+            </h2>
           </div>
-          <div class="projects">
-            <div>
-              <p class="label">
-                <a
-                  target="_blank"
-                  href="https://immense-savannah-58893.herokuapp.com"
-                  >Burger Base</a
-                >
-              </p>
-              <img src="Assets/img/lights600x400.jpg" alt="" />
+
+          <div
+            class="sectionContent m-2 p-2 items-center justify-end text-center bg-gray-100 mx-auto col-span-1 sm:col-span-3 md:col-span-7 lg:col-span-9"
+          >
+            <p>
+              I am currently enrolled in a fullstack web development bootcamp in
+              hopes of aquiring sufficient knowledge and practice to develop
+              robust web pages and apps. This is the second bootcamp I take, the
+              first was far simpler than the current bootcamp. After realizing
+              there where gaps in my knowledge of web development I decided to
+              enroll in this more complete bootcamp. Not only to complement my
+              knowledge, but also to have more accountability since it's been
+              hard being disciplined on my own. I don't intend to keep taking
+              bootcamps but I felt like this particular bootcamp would help me
+              develop better habits in order to succeed on my own after
+              completing the bootcamp.
+            </p>
+          </div>
+
+          <div
+            class="sectionTitle container flex justify-end bg-gray-100 border-r-4 border-blue-300 bg-gray-100 m-2 p-4 col-span-1 sm:col-span-1 md:col-span-2 lg:col-span-3"
+          >
+            <h2 class="text-3xl text-blue-300 font-bold">Work</h2>
+          </div>
+          <div
+            class="projects grid grid-cols-4 gap-2 bg-gray-100 m-2 p-4 col-span-1 sm:col-span-3 md:col-span-7 lg:col-span-9"
+          >
+            <div
+              class="project1 container col-span-4 flex border-4 border-blue-300"
+            >
+              <div class="container flex flex-col">
+                <div class="relative">
+                  <img src="Assets/img/passwordGenerator.png" alt="" />
+
+                  <button
+                    class="label font-bold text-lg p-2 bg-blue-300 text-gray-800 border-2 border-blue-300 absolute bottom-5 left-0"
+                  >
+                    <a
+                      target="_blank"
+                      href="https://fer-117.github.io/Fer-117_PasswordGenerator/"
+                    >
+                      Password Generator</a
+                    >
+                  </button>
+                </div>
+              </div>
             </div>
-            <div>
-              <p class="label">
-                <a
-                  target="_blank"
-                  href="https://fer-117.github.io/workDay-Scheduler/"
-                  >Workday Scheduler</a
-                >
-              </p>
-              <img src="./Assets/img/workdayScheduler.png" alt="" />
+            <div class="project2 col-span-2 border-4 border-blue-300">
+              <div class="container flex flex-col">
+                <div class="relative">
+                  <img src="./Assets/img/UnderConstruction.jpg" alt="" />
+
+                  <button
+                    class="label font-bold text-lg p-2 bg-blue-300 text-gray-800 border-2 border-blue-300 absolute bottom-5 left-0"
+                  >
+                    <a
+                      target="_blank"
+                      href="https://immense-savannah-58893.herokuapp.com"
+                    >
+                      Burger Base</a
+                    >
+                  </button>
+                </div>
+              </div>
             </div>
-            <div>
-              <p class="label">Project 4</p>
-              <img src="Assets/img/lights600x400.jpg" alt="" />
+            <div class="col-span-2 border-4 border-blue-300">
+              <div class="container flex flex-col">
+                <div class="relative">
+                  <img src="./Assets/img/workdayScheduler.png" alt="" />
+
+                  <button
+                    class="label font-bold text-lg p-2 bg-blue-300 text-gray-800 border-2 border-blue-300 absolute bottom-5 left-0"
+                  >
+                    <a
+                      target="_blank"
+                      href="https://fer-117.github.io/workDay-Scheduler/"
+                    >
+                      Workday Scheduler</a
+                    >
+                  </button>
+                </div>
+              </div>
             </div>
-            <div>
-              <p class="label">Project 5</p>
-              <img src="Assets/img/lights600x400.jpg" alt="" />
+            <div class="col-span-2 border-4 border-blue-300">
+              <div class="container flex flex-col">
+                <div class="relative">
+                  <img src="./Assets/img/weatherDashboard.png" alt="" />
+
+                  <button
+                    class="label font-bold text-lg p-2 bg-blue-300 text-gray-800 border-2 border-blue-300 absolute bottom-5 left-0"
+                  >
+                    <a
+                      target="_blank"
+                      href="https://fer-117.github.io/weatherDashboard/"
+                    >
+                      weatherDashboard</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-2 border-4 border-blue-300">
+              <div class="container flex flex-col">
+                <div class="relative">
+                  <img src="./Assets/img/UnderConstruction.jpg" alt="" />
+
+                  <button
+                    class="label font-bold text-lg p-2 bg-blue-300 text-gray-800 border-2 border-blue-300 absolute bottom-5 left-0"
+                  >
+                    <a target="" href="#"> Project 5</a>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -110,7 +193,15 @@
         <ul class="menu contactMenu">
           <li>+52 3326770116</li>
           <li>fsg11497@gmail.com</li>
-          <li>github account</li>
+          <li>
+            <a
+              id="github"
+              href="https://github.com/Fer-117"
+              target="_blank"
+              rel="noopener noreferrer"
+              >github.com/Fer-117</a
+            >
+          </li>
         </ul>
       </div>
     </footer>
